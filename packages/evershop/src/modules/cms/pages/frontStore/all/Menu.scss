@@ -1,0 +1,62 @@
+.main-menu {
+  .nav-link {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .nav-link::hover {
+    color: red;
+  }
+}
+
+.menu-container {
+  position: relative;
+  display: block;
+  z-index: 999999;
+}
+
+.product-header {
+  padding: 20px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.32);
+  display: none;
+}
+.product-header-last {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.32);
+  display: none;
+}
+.items {
+  padding: 0px 20px;
+}
+
+.product-header.block {
+  display: flex; /* Use grid when it's in block mode */
+}
+
+.product-header.hidden {
+  display: none;
+}
+.product-header-last.block {
+  display: flex; /* Use grid when it's in block mode */
+}
+
+.product-header-last.hidden {
+  display: none;
+}
+
+/* Optional: To limit the width of each product item */
+.product-item {
+  max-width: 250px; /* Adjust the width as needed */
+}
+@media (max-width: 768px) {
+  .isHidden {
+    display: none; /* Hide the product header on mobile */
+  }
+}

@@ -1,0 +1,48 @@
+.network {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 11px 0 rgba(0,0,0,.32);
+    .phone {
+        display: flex;
+        justify-content: center;
+        color: red;
+        margin-bottom: 10px;
+        .custom-icon {
+            width: 27px;
+            height: 27px;
+        }
+    }
+
+}
+.cart {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 11px 0 rgba(0,0,0,.32);
+    .phone {
+        display: flex;
+        justify-content: center;
+        color: red;
+        .custom-icon {
+            width: 27px;
+            height: 27px;
+        }
+    }
+}   
+
+.icon-phone {
+    background-color:red;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 11px 0 rgba(0,0,0,.32);
+    .phone {
+        display: flex;
+        justify-content: center;
+        color:white;
+        .custom-icon-phone {
+            width: 27px;
+            height: 27px;
+        }
+    }
+}

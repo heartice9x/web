@@ -1,0 +1,145 @@
+.product-container, .product-container-outstanding, .product-container-one, .product-container-done {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container-blog-show {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 100%;
+  background-color: #f4f2f28c;
+}
+.product-container, .product-container-outstanding, .product-container-one {
+  background-color: #fff;
+}
+/* Define the animation */
+.fade-down {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.add-cart {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 0px 15px 0px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Apply the animation when hovering */
+.product-container-outstanding:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.product-container-done {
+  position: relative;
+  overflow: hidden;
+}
+.fade-down-done {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.3s;
+}
+.fade-down {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Apply the animation when hovering */
+.product-container-one:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.product-container-done:hover .fade-down-done {
+  opacity: 1;
+}
+
+.product-container img, .product-container-done img,  .product-container-outstanding img, .product-container-one img {
+  margin: 0 auto;
+}
+.container-content > div {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-content img {
+  text-align: center;
+  max-width: 100%;
+}
+
+.container-content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.container-content p {
+  font-size: 14px;
+  color: #555;
+}
+.product-wrapper {
+  display: grid; /* Use grid layout to align the containers */
+  grid-template-columns: 1fr 1fr 1fr; /* Divide the available width equally among the three columns */
+}
+
+.product-image {
+  height: 300px; /* Set the height of the images */
+  width: 100%; /* Make the images responsive */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+.product-height {
+  font-weight: bold;
+}
+.product-height:hover {
+  color: red;
+  animation: 0.4s;
+}
+.product-border {
+  width: 45px;
+  height: 4px;
+  display: block;
+  background: #902428;
+  margin: 0 auto;
+}
+.overview-image {
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  padding: 50px 0px;
+}
+.container-blog-text {
+  font-weight: bold;
+  text-align: center;
+}
+.container-blog-text:hover {
+  color: red;
+  animation: 0.4s;
+}
+
+/* (No styles for .overview-image-absolution provided, so leaving it empty) */
+
+.image-overview {
+  height: 300px;
+  width: 30%;
+  object-fit: cover;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+
+/* Optional: Add media queries for responsiveness on different screen sizes */
+@media screen and (max-width: 768px) {
+  .product-wrapper {
+    grid-template-columns: 1fr; /* Change to single column layout on smaller screens */
+  }
+}
